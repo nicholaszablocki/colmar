@@ -1,8 +1,9 @@
 html{
   font-size: 16px;
 }
-.sitecontainer{
-  width:100%;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 header{
   height:64px;
@@ -116,4 +117,28 @@ nav span{
 .coursetext{
   display: flex;
   flex-direction: column;
+}
+body p{
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.thesis{
+  display: flex;
+}
+.thesis .thesisright{
+  display: flex;
+  flex-direction: column;
+}
+.thesis .thesisbox{
+  width:40%;
+  display:flex;
+}
+.thesisboxtext{
+  display: flex;
+  flex-direction: column;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
 }
