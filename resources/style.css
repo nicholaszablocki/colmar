@@ -120,6 +120,9 @@ nav span{
   height: auto;
   width:100%;
 }
+#courses .coursesmobile{
+  display:none;
+}
 .courses-row {
     display: flex;
     justify-content:space-between;
@@ -206,6 +209,33 @@ footer p{
       height:64px;
       width:100%;
     }
+    #courses{
+      background-color: white;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #courses .coursesmobile{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      background-color:white;
+      padding-left:16px;
+      width:100%;
+    }
+    #courses .coursesmobile p{
+      padding-top:16px;
+      padding-bottom:24px;
+      padding-left:16px;
+      padding-right:16px;
+      background-color: grey;
+      width:100%;
+      text-align: left;
+    }
+    #courses .courses-row{
+      display:none;
+    }
     .banner{
       flex-direction: column;
     }
@@ -238,15 +268,16 @@ footer p{
     }
     .information .informationright{
       border-left: 0;
-      width:100%;
+      width:93%;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
     }
     .information .informationright .informationbox1{
       flex-direction: column;
       align-items: center;
-      width:100%
-    }
-    .information .informationright .informationbox1{
       width:100%;
+      margin-left: 0;
     }
     .information .informationright .informationbox1 .informationboxtext{
       width:100%;
