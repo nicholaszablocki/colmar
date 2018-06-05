@@ -104,8 +104,14 @@ nav span{
   margin-left: 72px;
   margin-right: 72px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap:wrap;
+  margin-bottom: 32px;
+  background-color: grey;
+}
+.courses img{
+  height: auto;
 }
 .course{
   display: flex;
@@ -121,24 +127,120 @@ nav span{
 body p{
   margin-top: 32px;
   margin-bottom: 32px;
+  text-align: center;
 }
 .thesis{
   display: flex;
+  margin-left: 24px;
+  margin-bottom:24px;
 }
 .thesis .thesisright{
   display: flex;
   flex-direction: column;
+  margin-left:24px;
 }
 .thesis .thesisbox{
   width:40%;
   display:flex;
 }
+.thesis .thesisbox img{
+  margin:16px;
+  height:auto;
+  width:35%;
+}
 .thesisboxtext{
   display: flex;
   flex-direction: column;
+  width:65%;
+}
+.text{
+  width:60%;
+  margin-left:24px;
+}
+.text p{
+  margin-bottom: 8px;
 }
 footer{
   display: flex;
   justify-content: space-between;
   border-top: 1px solid black;
 }
+.mobileheader{
+  display:none;
+}
+.informationright .informationbox1 .informationboxtext img{
+  display:none;
+}
+
+@media only screen and (max-width: 470px){
+    header .headerleft{
+      display:none;
+    }
+    header nav{
+      display:none;
+    }
+    .mobileheader{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .banner{
+      flex-direction: column;
+    }
+    .bannerright{
+      display: flex;
+      flex-direction: column;
+    }
+    .information .informationleft{
+      display:none;
+    }
+    .informationright .informationbox1{
+      flex-direction: column;
+    }
+    .informationright .informationbox1{
+      align-items: center;
+    }
+    .informationright .informationbox1 .informationboxtext img{
+      display:block;
+      width:100%;
+    }
+    .informationright .informationbox1 img{
+      display:none;
+    }
+    .courses {
+      flex-direction: column;
+    }
+    .courses .course img{
+      display:none;
+    }
+    .courses .course span{
+      display:none;
+    }
+    .courses .course p{
+      margin:16px;
+    }
+    .courses .course{
+      background-color:grey;
+      margin-bottom:8px;
+    }
+    body p{
+      margin-top:32px;
+      margin-bottom: 16px;
+    }
+    .courses{
+      margin-bottom:32px;
+    }
+    .thesis .thesisright{
+      display:none;
+    }
+    footer span{
+      margin-top:16px;
+      margin-bottom:16px;
+    }
+    footer p{
+      display:none;
+    }
+    .text{
+      display:none;
+    }
+  }
